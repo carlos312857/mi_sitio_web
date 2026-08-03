@@ -1,42 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Sitio Web Personal - Inicio</title>
-</head>
-<body>
-    <h1>BIENBENIDO A MI SITIO WEB PERSONAL</h1>
-    <p>HOLA, MI NOMBRE ES CARLOS STEVAN GALVIS. En este sitio web podrás conocer más acerca de mi vida, mi familia, mi educación, mis gustos y mis metas a futuro.</p>
-    
-    <hr>
-    <h2>Secciones del Sitio</h2>
-    <p>Haz clic en cualquiera de las siguientes imágenes para navegar a las secciones:</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Sitio Web Personal</title>
 
-    <!-- Menú de navegación con imágenes -->
-    <a href="nacimiento.html">
-        <img src="img/icono_nacimiento.jpg" alt="Nacimiento" width="120" height="120">
-    </a>
-    <a href="familia.html">
-        <img src="img/icono_familia.jpg" alt="Familia" width="120" height="120">
-    </a>
-    <a href="educacion.html">
-        <img src="img/icono_educacion.jpg" alt="Educación" width="120" height="120">
-    </a>
-    <a href="amigos.html">
-        <img src="img/icono_amigos.jpg" alt="Amigos" width="120" height="120">
-    </a>
-    <br><br>
-    <a href="hobbies.html">
-        <img src="img/icono_hobbies.jpg" alt="Hobbies" width="120" height="120">
-    </a>
-    <a href="musica.html">
-        <img src="img/icono_musica.jpg" alt="Música" width="120" height="120">
-    </a>
-    <a href="horario.html">
-        <img src="img/icono_horario.jpg" alt="Horario" width="120" height="120">
-    </a>
-    <a href="proyecto_vida.html">
-        <img src="img/icono_proyecto.jpg" alt="Proyecto de Vida" width="120" height="120">
-    </a>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px;
+}
+
+header h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:20px;
+    width:80%;
+    margin:auto;
+    line-height:30px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.titulo{
+    text-align:center;
+    margin:40px 0;
+    font-size:35px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:white;
+    color:#222;
+    border-radius:20px;
+    text-align:center;
+    text-decoration:none;
+    padding:25px;
+    transition:.3s;
+    box-shadow:0px 10px 25px rgba(0,0,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0px 15px 35px rgba(0,0,0,.5);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #2563eb;
+}
+
+.card h3{
+    margin-top:15px;
+    color:#2563eb;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:15px;
+}
+
+footer{
+    background:#07142d;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌐 Mi Sitio Web Personal</h1>
+
+<p>
+
+Hola, mi nombre es <strong>Carlos Esteban Galvis</strong>. Te doy la bienvenida a mi sitio web personal, donde podrás conocer más acerca de mi vida, mi familia, mi educación, mis gustos, mis hobbies y los objetivos que tengo para mi futuro.
+
+</p>
+
+</header>
+
+<div class="contenedor">
+
+<h2 class="titulo">Explora las Secciones</h2>
+
+<div class="grid">
+
+<a class="card" href="nacimiento.html">
+<img src="img/icono_nacimiento.jpg" alt="">
+<h3>Nacimiento</h3>
+<p>Conoce dónde nací y algunos datos importantes de mi infancia.</p>
+</a>
+
+<a class="card" href="familia.html">
+<img src="img/icono_familia.jpg" alt="">
+<h3>Mi Familia</h3>
+<p>Las personas más importantes que hacen parte de mi vida.</p>
+</a>
+
+<a class="card" href="educacion.html">
+<img src="img/icono_educacion.jpg" alt="">
+<h3>Educación</h3>
+<p>Mi recorrido académico y los estudios que he realizado.</p>
+</a>
+
+<a class="card" href="amigos.html">
+<img src="img/icono_amigos.jpg" alt="">
+<h3>Amigos</h3>
+<p>Algunas personas especiales con quienes comparto grandes momentos.</p>
+</a>
+
+<a class="card" href="hobbies.html">
+<img src="img/icono_hobbies.jpg" alt="">
+<h3>Hobbies</h3>
+<p>Las actividades que más disfruto realizar durante mi tiempo libre.</p>
+</a>
+
+<a class="card" href="musica.html">
+<img src="img/icono_musica.jpg" alt="">
+<h3>Música</h3>
+<p>Los géneros y artistas que más me gustan escuchar.</p>
+</a>
+
+<a class="card" href="horario.html">
+<img src="img/icono_horario.jpg" alt="">
+<h3>Horario</h3>
+<p>Mi rutina y organización de actividades diarias.</p>
+</a>
+
+<a class="card" href="proyecto_vida.html">
+<img src="img/icono_proyecto.jpg" alt="">
+<h3>Proyecto de Vida</h3>
+<p>Mis metas, sueños y objetivos para el futuro.</p>
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 | Sitio Web Personal de Carlos Esteban Galvis
+</p>
+
+</footer>
+
 </body>
 </html>
