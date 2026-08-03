@@ -7,97 +7,71 @@
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
-    color:white;
+    font-family: Arial, sans-serif;
+    background-color:#e6f2ff;
+    margin:0;
 }
 
 header{
+    background-color:#2c7be5;
+    color:white;
     text-align:center;
-    padding:50px;
+    padding:20px;
 }
 
 header h1{
-    font-size:50px;
-    margin-bottom:20px;
+    margin:0;
 }
 
 header p{
-    font-size:20px;
     width:80%;
     margin:auto;
-    line-height:30px;
+    margin-top:10px;
+}
+
+section{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    margin-top:30px;
 }
 
 .contenedor{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
 }
 
-.titulo{
-    text-align:center;
-    margin:40px 0;
-    font-size:35px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    margin-bottom:50px;
-}
-
-.card{
+.tarjeta{
+    width:180px;
     background:white;
-    color:#222;
-    border-radius:20px;
-    text-align:center;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:15px;
     text-decoration:none;
-    padding:25px;
-    transition:.3s;
-    box-shadow:0px 10px 25px rgba(0,0,0,.3);
+    color:black;
+    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0px 15px 35px rgba(0,0,0,.5);
+.tarjeta:hover{
+    background:#d9ecff;
+    transform:scale(1.05);
 }
 
-.card img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #2563eb;
-}
-
-.card h3{
-    margin-top:15px;
-    color:#2563eb;
-}
-
-.card p{
-    margin-top:10px;
-    font-size:15px;
+.tarjeta img{
+    width:100px;
+    height:100px;
 }
 
 footer{
-    background:#07142d;
+    background:#2c7be5;
+    color:white;
     text-align:center;
-    padding:25px;
+    padding:15px;
     margin-top:40px;
-}
-
-footer p{
-    color:#ddd;
 }
 
 </style>
@@ -108,79 +82,69 @@ footer p{
 
 <header>
 
-<h1>🌐 Mi Sitio Web Personal</h1>
+<h1>Bienvenido a mi Sitio Web Personal</h1>
 
 <p>
-
-Hola, mi nombre es <strong>Carlos Esteban Galvis</strong>. Te doy la bienvenida a mi sitio web personal, donde podrás conocer más acerca de mi vida, mi familia, mi educación, mis gustos, mis hobbies y los objetivos que tengo para mi futuro.
-
+Hola, mi nombre es <b>Carlos Esteban Galvis</b>. En este sitio web podrás conocer un poco más sobre mi vida, mi familia, mi educación, mis gustos, mis hobbies y mis metas para el futuro.
 </p>
 
 </header>
 
+<section>
+
+<h2>Menú Principal</h2>
+
+<p>Haz clic en cualquiera de las siguientes opciones:</p>
+
 <div class="contenedor">
 
-<h2 class="titulo">Explora las Secciones</h2>
-
-<div class="grid">
-
-<a class="card" href="nacimiento.html">
-<img src="img/icono_nacimiento.jpg" alt="">
+<a href="nacimiento.html" class="tarjeta">
+<img src="img/icono_nacimiento.jpg" alt="Nacimiento">
 <h3>Nacimiento</h3>
-<p>Conoce dónde nací y algunos datos importantes de mi infancia.</p>
 </a>
 
-<a class="card" href="familia.html">
-<img src="img/icono_familia.jpg" alt="">
-<h3>Mi Familia</h3>
-<p>Las personas más importantes que hacen parte de mi vida.</p>
+<a href="familia.html" class="tarjeta">
+<img src="img/icono_familia.jpg" alt="Familia">
+<h3>Familia</h3>
 </a>
 
-<a class="card" href="educacion.html">
-<img src="img/icono_educacion.jpg" alt="">
+<a href="educacion.html" class="tarjeta">
+<img src="img/icono_educacion.jpg" alt="Educación">
 <h3>Educación</h3>
-<p>Mi recorrido académico y los estudios que he realizado.</p>
 </a>
 
-<a class="card" href="amigos.html">
-<img src="img/icono_amigos.jpg" alt="">
+<a href="amigos.html" class="tarjeta">
+<img src="img/icono_amigos.jpg" alt="Amigos">
 <h3>Amigos</h3>
-<p>Algunas personas especiales con quienes comparto grandes momentos.</p>
 </a>
 
-<a class="card" href="hobbies.html">
-<img src="img/icono_hobbies.jpg" alt="">
+<a href="hobbies.html" class="tarjeta">
+<img src="img/icono_hobbies.jpg" alt="Hobbies">
 <h3>Hobbies</h3>
-<p>Las actividades que más disfruto realizar durante mi tiempo libre.</p>
 </a>
 
-<a class="card" href="musica.html">
-<img src="img/icono_musica.jpg" alt="">
+<a href="musica.html" class="tarjeta">
+<img src="img/icono_musica.jpg" alt="Música">
 <h3>Música</h3>
-<p>Los géneros y artistas que más me gustan escuchar.</p>
 </a>
 
-<a class="card" href="horario.html">
-<img src="img/icono_horario.jpg" alt="">
+<a href="horario.html" class="tarjeta">
+<img src="img/icono_horario.jpg" alt="Horario">
 <h3>Horario</h3>
-<p>Mi rutina y organización de actividades diarias.</p>
 </a>
 
-<a class="card" href="proyecto_vida.html">
-<img src="img/icono_proyecto.jpg" alt="">
+<a href="proyecto_vida.html" class="tarjeta">
+<img src="img/icono_proyecto.jpg" alt="Proyecto de Vida">
 <h3>Proyecto de Vida</h3>
-<p>Mis metas, sueños y objetivos para el futuro.</p>
 </a>
 
 </div>
 
-</div>
+</section>
 
 <footer>
 
-<p>
-© 2026 | Sitio Web Personal de Carlos Esteban Galvis
-</p>
+<p>© 2026 - Mi Sitio Web Personal</p>
 
 </footer>
 
